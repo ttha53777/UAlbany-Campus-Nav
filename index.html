@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAlbany Campus Routing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <h1>UAlbany Campus Routing</h1>
+    <div class="controls">
+        <div>
+            <label for="start">Start Location:</label>
+            <select id="start">
+                <option value="current">📍 Use My Current Location</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="end">End Location:</label>
+            <select id="end">
+                <option value="42.686765, -73.825051">University Library</option>
+            </select>
+        </div>
+        
+        <div class="button-group">
+            <button id="groundRouteBtn" class="route-btn">Find Ground Route</button>
+            <button id="tunnelRouteBtn" class="route-btn">Find Tunnel Route</button>
+        </div>
+        
+        <div id="locationStatus"></div>
+    </div>
+    
+    <div id="map"></div>
+    
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-rotatedmarker/0.2.0/leaflet-rotatedmarker.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
