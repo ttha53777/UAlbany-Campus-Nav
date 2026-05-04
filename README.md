@@ -110,29 +110,3 @@ If the user selects **Use My Current Location**, the browser will request locati
 
 If permission is denied or location is unavailable, the app falls back to a default campus coordinate.
 
-## Known Issue
-
-`script.js` uses `L.rotatedMarker(...)` for a heading-aware live location marker, but `index.html` only loads core Leaflet.
-
-If current location tracking causes an error, add the Leaflet Rotated Marker plugin to `index.html`, or replace `L.rotatedMarker(...)` with a normal Leaflet marker:
-
-```js
-L.marker(...)
-```
-
-## Future Improvements
-
-Potential features to add:
-
-- More accurate entrance selection for each building
-- Better mobile layout
-- Step-by-step directions
-- Estimated travel time based on walking speed
-- Indoor/tunnel labels
-- Accessibility-friendly routing options
-- Search bar for buildings
-- Route preference options such as fastest, shortest, or tunnel-preferred
-
-## License
-
-No license has been specified yet. Add a license before publicly distributing or open-sourcing the project.
